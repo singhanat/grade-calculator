@@ -2,6 +2,11 @@
 
 from grade import calculate_grade, calculate_gpa
 
+# เพิ่มใน test_grade.py
+def test_weighted_gpa():
+    assert calculate_weighted_gpa([85, 75], [3, 1]) == 3.5
+    print("calculate_weighted_gpa: ผ่านทุก test")
+
 def test_calculate_grade():
     assert calculate_grade(85) == "A"
     assert calculate_grade(75) == "B"
